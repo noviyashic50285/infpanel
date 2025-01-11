@@ -1,0 +1,39 @@
+.container { position: absolute; z-index: -2;
+    text-align: center; 
+    margin-top: 24rem; 
+}
+  .fade-in { margin-left: 10rem;  
+      opacity: 0; 
+      animation: fadeIn ease-in 1; 
+      animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+      animation-duration: 9s; 
+    }
+  @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+  .animate__slideOutRight{
+    --animate-duration: 20s;
+    position: absolute;
+    margin-top: -12.5rem; 
+    margin-left: 39rem;      /* --animate-delay: 1s; */
+  }
+  .animate__slideOutLeft{
+    --animate-duration: 20s;
+    position: absolute;
+    margin-top: -12.5rem; 
+    margin-left: 39rem;  
+  }
+  .animate__slideInRight{
+    --animate-duration: 20s;
+    margin-left: 10rem;  
+  }
+  .animate__slideInLeft{
+    --animate-duration: 20s;
+    margin-left: 10rem;  
+  }
+  
