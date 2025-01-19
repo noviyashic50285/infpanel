@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Красоты 3 Музыка</title>
+  <title>Красоты 3 Музыка 2</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="progressive-image.css"/>
@@ -59,63 +59,68 @@ id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="opacity: .5;">
 <div class="container-fluid text-center">
   <div class="row">
     <div class="col-4">
-            
-      <span id=musil1><span>&nbsp&nbsp&nbspВ последний раз</span>    
-          <audio controls loop>
-            <source src="musicv/poslraz.mp3" type="audio/mpeg">Прослушаем музыку 1
-          </audio>
-      </span>
-      <span id=musil2><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspГде живёшь</span>    
-        <audio controls loop>
-            <source src="musicv/gdezivesh.mp3" type="audio/mpeg">Прослушаем музыку 1
-        </audio>
-      </span>
-      <span id=musil3><span>&nbsp&nbsp&nbsp&nbspПроснись и пой</span>    
-        <audio controls loop>
-            <source src="musicv/prospoy.mp3" type="audio/mpeg">Прослушаем музыку 1
-        </audio>
-      </span>
-      
-      </div>  
-      <div class="col-4">
-      
-      <span id=musil4><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspБез весны</span>    
-          <audio controls loop>
-            <source src="musicv/bezvesny.mp3" type="audio/mpeg">Прослушаем музыку 1
-          </audio>
-      </span>
-      <span id=musil5><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspОлимпийская</span>    
-        <audio controls loop>
-            <source src="musicv/olimp.mp3" type="audio/mpeg">Прослушаем музыку 1
-        </audio>
-      </span>
-      <span id=musil6><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspАлександра</span>    
-        <audio controls loop>
-            <source src="musicv/alexandra.mp3" type="audio/mpeg">Прослушаем музыку 1
-        </audio>
-      </span>
-      
-      </div>  
-      <div class="col-4">
-      
-      <span id=musil7><span>&nbsp&nbspЯ у бабушки живу</span>    
-          <audio controls loop>
-            <source src="musicv/ubabuski.mp3" type="audio/mpeg">Прослушаем музыку 1
-          </audio>
-      </span>
-      <span id=musil8><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВспоминать</span>    
-        <audio controls loop>
-            <source src="musicv/vspnenado.mp3" type="audio/mpeg">Прослушаем музыку 1
-        </audio>
-      </span>
-      <span id=musil9><span>&nbsp&nbsp&nbsp&nbsp&nbspСнег кружится</span>    
-        <audio controls loop>
-            <source src="musicv/snegkruz.mp3" type="audio/mpeg">Прослушаем музыку 1
-        </audio>
-      </span>
-      
-      </div></div></div>
-      
+
+<div>
+  <audio id="audio1">
+      <source src="musicv/poslraz.mp3" type="audio/mpeg">
+  </audio>
+</div>
+<button class="btn btn-primary bg-transparent" id="playPauseBTN1" onclick="playPause1()">Play &#9658;</button>
+&nbsp;<span>&nbsp;В последний раз&nbsp;</span>&nbsp;
+<button class="btn btn-primary bg-transparent" onclick="stop1()">Stop &#9611;</button>
+
+<div>
+  <audio id="audio2">
+      <source src="musicv/gdezivesh.mp3" type="audio/mpeg">
+  </audio>
+</div>
+<button class="btn btn-primary bg-transparent" id="playPauseBTN2" onclick="playPause2()">Play &#9658;</button>
+&nbsp;<span>Где живёшь</span>&nbsp;
+<button class="btn btn-primary bg-transparent" onclick="stop2()">Stop &#9611;</button>
+
+</div>  
+<div class="col-4">
+
+  <div>
+    <audio id="audio3">
+      <source src="musicn/LikeaPrayer.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  <button class="btn btn-primary bg-transparent" id="playPauseBTN3" onclick="playPause3()">Play &#9658;</button>
+  &nbsp;<span>Like a Prayer</span>&nbsp;
+  <button class="btn btn-primary bg-transparent" onclick="stop3()">Stop &#9611;</button>
+  
+  <div>
+   <audio id="audio4">
+      <source src="musicn/KalimbadeLuna.mp3" type="audio/mpeg">
+   </audio>
+  </div>
+  <button class="btn btn-primary bg-transparent" id="playPauseBTN4" onclick="playPause4()">Play &#9658;</button>
+  &nbsp;<span>Kalimba de Luna</span>&nbsp;
+  <button class="btn btn-primary bg-transparent" onclick="stop4()">Stop &#9611;</button>
+
+</div>  
+<div class="col-4">
+
+<div>
+  <audio id="audio5">
+    <source src="musicv/olimp.mp3" type="audio/mpeg">
+  </audio>
+</div>
+<button class="btn btn-primary bg-transparent" id="playPauseBTN5" onclick="playPause5()">Play &#9658;</button>
+&nbsp;<span>Олимпийская</span>&nbsp;
+<button class="btn btn-primary bg-transparent" onclick="stop5()">Stop &#9611;</button>
+
+<div>
+ <audio id="audio6">
+    <source src="musicv/ubabuski.mp3" type="audio/mpeg">
+ </audio>
+</div>
+<button class="btn btn-primary bg-transparent" id="playPauseBTN6" onclick="playPause6()">Play &#9658;</button>
+&nbsp;<span>Я у бабушки живу</span>&nbsp;
+<button class="btn btn-primary bg-transparent" onclick="stop6()">Stop &#9611;</button>
+
+    </div></div></div>      
     </div>
 </div>
 
@@ -127,15 +132,25 @@ id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style="opacity: .5;"
 <div class="row">
 <div class="col-4">
       
-<span id=musir1><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKalimba</span>    
-    <audio controls loop>
-      <source src="musicn/KalimbadeLuna.mp3" type="audio/mpeg">Прослушаем музыку 1
-    </audio>
-</span>
-<span id=musir2><span>&nbsp&nbsp&nbsp&nbsp&nbspLike A Prayer</span>    
-  <audio controls loop>
-      <source src="musicn/LikeaPrayer.mp3" type="audio/mpeg">Прослушаем музыку 1
-  </audio>
+  <button class="moystar"><a href="https://noviyashik15.github.io/davidwalsh/index.html" style="text-decoration: none;" 
+    target="_blank">Маврикий</a></button>
+
+  <button class="moystar"><a href="https://noviyashik50285.github.io/podgruzpic/index.html" style="text-decoration: none;" 
+    target="_blank">Дубай</a></button>
+    
+  <button class="moystar"><a href="https://noviyashik15.github.io/progrcraig/index.html" style="text-decoration: none;" 
+    target="_blank">Плитвицкие озёра</a></button>
+           
+</div>  
+<div class="col-4">
+
+<button class="moystar" style="text-decoration: none;"><a href="stindex.html" target="_blank" style="text-decoration: none;"
+title="Сайты">Сайты</a></button>
+
+<span id=musir7><span>&nbsp&nbsp&nbsp&nbsp&nbspО тебе мечтаю</span>    
+<audio controls loop>
+  <source src="musicn/otebemech.mp3" type="audio/mpeg">Прослушаем музыку 1
+</audio>
 </span>
 <span id=musir3><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBarbie</span>    
   <audio controls loop>
@@ -146,39 +161,15 @@ id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style="opacity: .5;"
 </div>  
 <div class="col-4">
 
-<button class="moystar"><a href="stindex.html" target="_blank" style="text-decoration: none;"
-title="Ссылки на наши сайты">Ссылки на сайты</a></button><br>
-
-<span id=musir4><span>&nbspSorry, I'm a lady</span>    
-    <audio controls loop>
-      <source src="musicn/SorryimaLady.mp3" type="audio/mpeg">Прослушаем музыку 1
-    </audio>
-</span>
-<span id=musir5><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCioccolato</span>    
-  <audio controls loop>
-      <source src="musicn/Celatoalcioccolato.mp3" type="audio/mpeg">Прослушаем музыку 1
-  </audio>
-</span>
-
-</div>  
-<div class="col-4">
-
-<span id=musir6><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspБрич Мулла</span>    
-  <audio controls loop>
-      <source src="musicn/brichmulla.mp3" type="audio/mpeg">Прослушаем музыку 1
-  </audio>
-</span>
-<span id=musir8><span>&nbsp&nbspМаленькая страна</span>    
-  <audio controls loop>
-      <source src="musicn/malstrana.mp3" type="audio/mpeg">Прослушаем музыку 1
-  </audio>
-</span>
-<span id=musir9><span>&nbsp&nbsp&nbspСердце Мальвины</span>    
-  <audio controls loop>
-      <source src="musicn/07-Serdmalvini.mp3" type="audio/mpeg">Прослушаем музыку 1
-  </audio>
-</span>
-
+  <button class="moystar"><a href="https://noviyashik15.github.io/infinauto/index.html" style="text-decoration: none;" 
+  target="_blank">Каньо-Кристалес</a></button>
+  
+  <button class="moystar"><a href="https://noviyashik15.github.io/krasasync/index.html" style="text-decoration: none;" 
+  target="_blank">Муреа</a></button>
+   
+  <button class="moystar"><a href="https://noviyashik50285.github.io/podgrlazy/index.html" style="text-decoration: none;" 
+  target="_blank">Чжанцзяцзе</a></button>
+  
 </div></div></div>
 
   </div>
@@ -220,7 +211,7 @@ id="offcanvasEnd" aria-labelledby="offcanvasEndLabel" style="opacity: .9;">
     <h6 class="animate__animated animate__slideOutLeft">Читайте, где Вам удобней.</h6>
     <h6 class="animate__animated animate__slideOutRight">Читайте, где Вам удобней.</h6>
     <h1 class="fade-in">Выберите фон из меню слева и справа</h1>
-    <h3 class="animate__animated animate__slideInLeft">Вверху и внизу выберите музыку</h3>
+    <h3 class="animate__animated animate__slideInLeft">Вверху и внизу выберите музыку или сайт</h3>
     <h3 class="animate__animated animate__slideInRight">ЗАО НПП "АТС"</h3>
     <h5 class="fade-in" id="fadein2">При наведении курсора на верх окна в 
       середине появится кнопна для включения и отключения главного меню</h5>
@@ -233,6 +224,7 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
 <script src="backgr.js"></script>      
 <script src="vklvikl.js"></script>  
 <script src="playmusic.js"></script>  
+<script src="audiofile.js"></script>   
   
 <script src="granim.min.js"></script>
 <script src="granimjs.js"></script>
