@@ -100,7 +100,7 @@ function playMusic() {
   playvBtnEl.classList.replace("fa-play", "fa-pause");
   playvBtnEl.setAttribute("title", "pause");
   music.play();
-}
+  }
 //================== Pause Music====================
 function pauseMusic() {
   isPlaying = false;
@@ -117,8 +117,21 @@ function loadMusic(songs) {
 function changeMusic(direction) {
   musicIndex = musicIndex + direction + (songs.length % songs.length);
   loadMusic(songs[musicIndex]);
-  playMusic();
+ubrcvet();
+let audiolist = document.querySelectorAll( ".audiolist" );
+audiolist[musicIndex].style.color = "white";
+audiolist[musicIndex].style.background = "green";
+playMusic();
 }
+
+function ubrcvet() {
+let audiolist = document.querySelectorAll(".audiolist");
+for( let i = 0; i < audiolist.length; i++){ 
+    audiolist[i].style.color = "black";
+    audiolist[i].style.background = "white";
+}  //  musiclist1.style.color = "red";
+}
+
 //================== Set Progress ====================
 function setProgressBar(e) {
   const width = playerProgressEl.clientWidth;
