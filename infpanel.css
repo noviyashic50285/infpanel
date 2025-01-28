@@ -8,7 +8,7 @@ html, body {margin: 0; height: 100%; overflow: hidden;}
 position: absolute; top: 29%; width: 100%;
 }
 .btn{ margin: .8rem; color: #000; }
-.btn:hover{ color: white }
+.btn:hover{ color: rgb(242, 196, 196) }
 #otklvse{ display: block; z-index: 8;
 position: absolute; text-align: center; left: 42%;
 opacity: 0;
