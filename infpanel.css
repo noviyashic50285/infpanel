@@ -22,6 +22,9 @@ opacity: 1;
 color: black;
 }
 body{display: flex;}
+.audiolist{ margin-bottom: 5px;
+border: 1px dashed #a45be8; border-radius: 10px; 
+}
 *{
 -webkit-user-select: none;
 -khtml-user-select: none;
