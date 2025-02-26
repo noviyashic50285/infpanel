@@ -1,0 +1,229 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Красоты 3 Музыка</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="progressive-image.css"/>
+<link rel="stylesheet" href="stindex.css"/>
+<link rel="stylesheet" href="animpanel.css"/>
+<link rel="stylesheet" href="granimjs.css"/>
+<link rel="stylesheet" href="animate.min.css"/>
+<link rel="stylesheet" href="opisanie.css"/>
+<link rel="stylesheet" href="infpanel.css">
+<link rel="icon" type="Images/x-icon" href="atsicon.ico"/>
+</head>
+<body>
+<canvas id="canvas-basic"></canvas>    
+
+<a href="back/amazon1.jpg" class="progressive replace" id="prim01"><img src="back/amazom1.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/amazon2.jpg" class="progressive replace" id="prim02"><img src="back/amazom2.jpg" class="preview" alt="Нет фото" /></a> 
+
+<a href="back/kheops1.jpg" class="progressive replace" id="prim03"><img src="back/kheopm1.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/kheops2.jpg" class="progressive replace" id="prim04"><img src="back/kheopm2.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/kheops3.jpg" class="progressive replace" id="prim05"><img src="back/kheopm3.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/kheops4.jpg" class="progressive replace" id="prim06"><img src="back/kheopm4.jpg" class="preview" alt="Нет фото" /></a> 
+
+<a href="back/sphinx1.jpg" class="progressive replace" id="prim07"><img src="back/sphinm1.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/sphinx2.jpg" class="progressive replace" id="prim08"><img src="back/sphinm2.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/sphinx3.jpg" class="progressive replace" id="prim09"><img src="back/sphinm3.jpg" class="preview" alt="Нет фото" /></a> 
+
+<a href="back/sigiriya1.jpg" class="progressive replace" id="prim10"><img src="back/sigiriym1.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/sigiriya2.jpg" class="progressive replace" id="prim11"><img src="back/sigiriym2.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/sigiriya3.jpg" class="progressive replace" id="prim12"><img src="back/sigiriym3.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/sigiriya4.jpg" class="progressive replace" id="prim13"><img src="back/sigiriym4.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/sigiriya5.jpg" class="progressive replace" id="prim14"><img src="back/sigiriym5.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/sigiriya6.jpg" class="progressive replace" id="prim15"><img src="back/sigiriym6.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/sigiriya7.jpg" class="progressive replace" id="prim16"><img src="back/sigiriym7.jpg" class="preview" alt="Нет фото" /></a> 
+
+<a href="back/skaftafell1.jpg" class="progressive replace" id="prim17"><img src="back/skaftafelm1.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/skaftafell2.jpg" class="progressive replace" id="prim18"><img src="back/skaftafelm2.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/skaftafell3.jpg" class="progressive replace" id="prim19"><img src="back/skaftafelm3.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/skaftafell4.jpg" class="progressive replace" id="prim20"><img src="back/skaftafelm4.jpg" class="preview" alt="Нет фото" /></a> 
+
+<!-- <button class="btn btn-primary bg-transparent" id="otklvse" onclick="show_hide5()">&nbspВключить/Отключить меню&nbsp</button> -->
+<button id="otklvse" onclick="show_hide5()">&nbspВключить/Отключить меню&nbsp</button>
+<div class="butnmenu" id="butnmenu">
+  <button class="btn btn-primary bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls loop="offcanvasTop">Вверху</button><br>
+  <button class="btn btn-primary bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls loop="offcanvasStart">Левое</button>
+  <button class="btn btn-primary bg-transparent" id="butn90">&nbspУбрать фон&nbsp</button>
+  <button class="btn btn-primary bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd" aria-controls loop="offcanvasEnd">Правое</button><br> 
+  <button class="btn btn-primary bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls loop="offcanvasBottom">Внизу</button>
+</div>
+
+<div class="offcanvas offcanvas-top" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" 
+id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="opacity: .5;">
+  <div class="offcanvas-body"> 
+    
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-4">
+            
+      <span id=musil1><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspМы вместе</span>
+          <audio controls loop>
+            <source src="musicv/5stavmeste.mp3" type="audio/mpeg">Прослушаем музыку 1
+          </audio>
+      </span>
+      <span id=musil2><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspСтоп</span>    
+        <audio controls loop>
+            <source src="musicv/ultrafz6stop.mp3" type="audio/mpeg">Прослушаем музыку 1
+        </audio>
+      </span>
+      <span id=musil3><span>&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbspВсё летала</span>    
+        <audio controls loop>
+            <source src="musicv/vseletala.mp3" type="audio/mpeg">Прослушаем музыку 1
+        </audio>
+      </span>
+      
+      </div>  
+      <div class="col-4">
+      
+      <span id=musil4><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТолько там</span>    
+          <audio controls loop>
+            <source src="musicv/tolkotam.mp3" type="audio/mpeg">Прослушаем музыку 1
+          </audio>
+      </span>
+      <span id=musil5><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspДосвидания</span>    
+        <audio controls loop>
+            <source src="musicv/dosvidaniya.mp3" type="audio/mpeg">Прослушаем музыку 1
+        </audio>
+      </span>
+      <span id=musil6><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspL.M.L.</span>    
+        <audio controls loop>
+            <source src="musicv/viagralml.mp3" type="audio/mpeg">Прослушаем музыку 1
+        </audio>
+      </span>
+      
+      </div>  
+      <div class="col-4">
+      
+      <span id=musil7><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspКукла</span>    
+          <audio controls loop>
+            <source src="musicv/ivankukla.mp3" type="audio/mpeg">Прослушаем музыку 1
+          </audio>
+      </span>
+      <span id=musil8><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspВерёвки</span>    
+        <audio controls loop>
+            <source src="musicn/verevki.mp3" type="audio/mpeg">Прослушаем музыку 1
+        </audio>
+      </span>
+      <span id=musil9><span>В&nbspкраю магнолий</span>    
+        <audio controls loop>
+            <source src="musicn/magnolii.mp3" type="audio/mpeg">Прослушаем музыку 1
+        </audio>
+      </span>
+      
+      </div></div></div>
+      
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" 
+id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style="opacity: .5;">
+  <div class="offcanvas-body">
+
+<div class="container-fluid text-center">
+<div class="row">
+<div class="col-4">
+      
+<span id=musir1><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspМарихуана</span>    
+    <audio controls loop>
+      <source src="musicn/marihuana.mp3" type="audio/mpeg">Прослушаем музыку 1
+    </audio>
+</span>
+<button class="moystar"><a href="https://noviyashic50285.github.io/gitmusic11/index.html" target="_blank" style="text-decoration: none;"
+title="Плейер 11">Плейер 11</a></button><br>
+<button class="moystar"><a href="https://noviyashic50285.github.io/dubmexkr/index.html" target="_blank" style="text-decoration: none;"
+title="Плейер 12">Плейер 12</a></button><br>
+      
+</div>  
+<div class="col-4">
+
+<button class="moystar"><a href="index.html" target="_blank" style="text-decoration: none;"
+title="Start">Start</a></button><br>
+
+<button class="moystar"><a href="player2/audiorez.html" target="_blank" style="text-decoration: none;"
+title="Ещё один плейер">Плейер 2</a></button><br>
+
+<button class="moystar"><a href="https://noviyashik15.github.io/atsgitlite/index.html" target="_blank" style="text-decoration: none;"
+title="Сайт АТС">Сайт "АТС"</a></button><br>
+
+</div>  
+<div class="col-4">
+
+<span id=musir6><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspТрава у дома</span>    
+  <audio controls loop>
+      <source src="musicn/travaudoma.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span>
+<button class="moystar"><a href="https://noviyashik15.github.io/plavotkrit/index.html" target="_blank" style="text-decoration: none;"
+title="Первооткрыватели">Первооткрыватели</a></button><br>
+<button class="moystar"><a href="stindex.html" target="_blank" style="text-decoration: none;"
+title="Другие сайты">Другие сайты</a></button><br>
+      
+</div></div></div>
+
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" 
+id="offcanvasStart" aria-labelledby="offcanvasStartLabel" style="opacity: .9;">
+  <div class="offcanvas-body">
+    <button class="btn btn-primary bg-transparent" id="butn01">&nbspВстреча вод 1&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn02">&nbspВстреча вод 2&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn03">&nbspПирами́да Хео́пса 1&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn04">&nbspПирами́да Хео́пса 2&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn05">&nbspПирами́да Хео́пса 3&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn06">&nbspПирами́да Хео́пса 4&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn07">&nbspБольшой сфинкс 1&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn08">&nbspБольшой сфинкс 2&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn09">&nbspБольшой сфинкс 3&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn10">&nbspСигирия 1&nbsp</button><br>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" 
+id="offcanvasEnd" aria-labelledby="offcanvasEndLabel" style="opacity: .9;">
+  <div class="offcanvas-body">
+    <button class="btn btn-primary bg-transparent" id="butn11">&nbspСигирия 2&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn12">&nbspСигирия 3&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn13">&nbspСигирия 4&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn14">&nbspСигирия 5&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn15">&nbspСигирия 6&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn16">&nbspСигирия 7&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn17">&nbspСкафтафедль 1&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn18">&nbspСкафтафедль 2&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn19">&nbspСкафтафедль 3&nbsp</button><br>
+    <button class="btn btn-primary bg-transparent" id="butn20">&nbspСкафтафедль 4&nbsp</button><br>
+  </div>
+</div>
+
+<div class="container">
+    <h6 class="animate__animated animate__slideOutLeft">Читайте, где Вам удобней.</h6>
+    <h6 class="animate__animated animate__slideOutRight">Читайте, где Вам удобней.</h6>
+    <h1 class="fade-in">Выберите фон из меню слева и справа</h1>
+    <h3 class="animate__animated animate__slideInLeft">Вверху и внизу выберите музыку</h3>
+    <h3 class="animate__animated animate__slideInRight">ЗАО НПП "АТС"</h3>
+    <h5 class="fade-in" id="fadein2">При наведении курсора на верх окна в 
+      середине появится кнопка для включения и отключения главного меню</h5>
+</div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="progressive-image.js"></script>      
+<script src="backgr.js"></script>      
+<script src="vklvikl.js"></script>  
+<script src="playmusic.js"></script>  
+  
+<script src="granim.min.js"></script>
+<script src="granimjs.js"></script>
+
+<script src="popper.min.js"></script>
+<script src="tippy-bundle.umd.js"></script>
+<script src="podskaz.js"></script>
+
+</body>
+</html>
+

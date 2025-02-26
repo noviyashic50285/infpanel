@@ -1,0 +1,35 @@
+*{margin: 0; padding: 0;}
+html, body {margin: 0; height: 100%; overflow: hidden;}
+#prim01, #prim02, #prim03, #prim04, #prim05, #prim06, #prim07,
+#prim08, #prim09, #prim10, #prim11, #prim12, #prim13, #prim14,
+#prim15, #prim16, #prim17, #prim18, #prim19, #prim20
+{display: none;}
+.butnmenu{ text-align: center; 
+position: absolute; top: 29%; width: 100%;
+}
+.btn{ margin: .8rem; color: #000; }
+.btn:hover{ color: rgb(242, 196, 196) }
+#otklvse{ display: block; z-index: 8;
+position: absolute; text-align: center; left: 42%;
+opacity: 0;
+background-color: rgb(233, 235, 154);
+border: 1px dashed #a45be8; border-radius: 10px; 
+cursor: pointer;
+transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+#otklvse:hover {
+opacity: 1;
+color: black;
+}
+body{display: flex;}
+.audiolist{ margin-bottom: 5px;
+border: 1px dashed #a45be8; border-radius: 10px; 
+}
+*{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+    
