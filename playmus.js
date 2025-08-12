@@ -78,8 +78,8 @@ const songs = [
     displayName: "Я вспоминаю",
   },
   {
-    path: "musicn/pechalitsa.mp3",
-    displayName: "Не надо печалиться",
+    path: "musicn/kakzdorovo.mp3",
+    displayName: "Как здорово",
   },
 ];
 const music = new Audio();
