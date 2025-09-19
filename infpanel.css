@@ -26,6 +26,9 @@ body{display: flex;}
 .audiolist{ margin-bottom: 5px;
 border: 1px dashed #a45be8; border-radius: 10px; 
 }
+.gifki{
+margin-top: 8.2rem;
+}
 *{
 -webkit-user-select: none;
 -khtml-user-select: none;
